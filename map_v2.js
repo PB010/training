@@ -1,8 +1,8 @@
 //
-Array.prototype.mymapv2 = function() {
+Array.mymapv2 = function() {
     const resultArray = [];
     for (let index = 0; index < sample.length; index++) {
-        callback(sample[index], index, sample);
+        resultArray.push(callback(sample[index], index, sample));
     }
     return resultArray;
 }
@@ -11,4 +11,5 @@ var output = sample.mymapv2(function(val, index, array) {
     console.log('val :', val, 'index :', index, 'array ;', array);
     return val*2
 })
+
 //
