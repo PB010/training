@@ -11,5 +11,5 @@ var output = sample.mymapv2(function(val, index, array) {
     console.log('val :', val, 'index :', index, 'array ;', array);
     return val*2;
 })
-console.log(output);
+
 //
